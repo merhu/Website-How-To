@@ -9,11 +9,13 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-
-.nav{
-
+.nav {
+    background-color: aliceblue;
 }
-
+.active {
+}
 #firstItem{
+}
+#secondItem{
 
 }

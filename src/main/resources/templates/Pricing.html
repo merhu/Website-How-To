@@ -1,35 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <div th:insert="base :: header"></div>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Nanum+Gothic&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>How to make a Website </title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous" />
+    <!--My CSS-->
+    <link rel="stylesheet" type="text/css" th:href="css/style.css}">
     <title>Pricing</title>
-    <br >
-    <h1 align="middle" > The Easiest way to code! </h1>
-    <h4 align="middle" > Unlock LearnAcademy’s premium features and get where you're going, faster.</h4>
-    <h3 align="middle" >  <button>UPGRADE NOW</button></h3>
-    <h2 align="middle" > Choose your plan!</h2>
+
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: navajowhite;
+        }
+        h1,h4,h3,h2{
+            align-content: center;
+        }
+    </style>
 </head>
 <body>
-<style>
-    body {
-        background-color: whitesmoke;
-    }
-    h1,h4,h3,h2{
-        align:"middle"
-    }
-</style>
-<ul>
-    <li> <h4>12 Month Subscription </h4></li>
-    <li> <h4>6 Month Subscription</h4></li>
-    <li> <h4>Monthly Subscription</h4> </li>
-</ul>
-<div class="card" style="width: 18rem;">
-    <!--<img src="..." class="card-img-top" alt="...">-->
-    <div class="card-body">
-        <h5 class="card-title">12 Month Subscription</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div th:insert="base :: navigation"></div>
+<!---- header--->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">The Easiest way to code!</h1>
+        <p class="lead">Unlock LearnAcademy’s premium features and get where you're going, faster. </p>
+        <h2> Career paths</h2>
+        <p>Career Paths guide you through exactly what you need to learn to build a solid foundation for a career in tech.</p>
+        <h3 align="middle" >  <button>Learn more</button></h3>
+        <img align="right" src="https://res.cloudinary.com/dgogsuupz/image/upload/c_scale,w_468/v1562687478/image_x7ljuk.jpg">
+    </div>
+</div>
+<!-- Monthly subscriptions --->
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><b> 12 Month Subscription</b></h5>
+                <h4 class="card-price"> $19.99/mo</h4>
+                <p class="card-text">Access to exclusive quizzes, projects, and customized learning paths.</p>
+                <a href="#" class="btn btn-primary">UPGRADE NOW</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><b>6 Month Subscription</b></h5>
+                <h4 class="card-price"> $29.99/mo</h4>
+                <p class="card-text">Access to exclusive quizzes, projects, and customized learning paths.</p>
+                <a href="#" class="btn btn-primary">UPGRADE NOW</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><b> Monthly Subscription</b></h5>
+                <h4 class="card-price"> $39.99/mo</h4>
+                <p class="card-text">Access to exclusive quizzes, projects, and customized learning paths.</p>
+                <a href="#" class="btn btn-primary">UPGRADE NOW</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>
 </html>
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<!--<div class="footer">-->
+    <!--<p>Footer</p>-->
+<!--</div>-->

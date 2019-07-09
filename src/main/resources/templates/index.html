@@ -1,70 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"xmlns:th="www.thymeleaf.org">
 <head>
-    <!-- Navigation bar-->
-    </head>
+    <div th:insert="base :: header"></div>
+</head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Our Class Webpage</title>
+    <title>How to make a Website </title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous" />
     <!--My CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css}">
-    <!--<nav>-->
-        <!--<div class="topnav">-->
-           <!--<h3> <a href="LearnAcademy.html"> LearnAcademy</a></h3>-->
-           <!--<h5><a href="Catalog.html"> Catalog </a> </h5>-->
-            <!--<h5><a href="Pricing.html"> Pricing </a> </h5>-->
-            <!--<input type="text" placeholder="Search...">-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!---Styling-->
+    <style>
+        body {
+            background-color: #ffd887;
+        }
+    </style>
 
-        <!--</div>-->
-    <!--</nav>-->
 
-</head>
-<!-- Background/ styling-->
 <body>
-<body>
-<ul class="nav">
-    <li class="nav-item" id="firstItem">
-        <a class="nav-link" href="#">LearnAcademy</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Catalog</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-</ul>
-
-<div class="jumbotron">
-    <h1 class="display-4">Make a Website...</h1>
+<!-- Navigation bar from base.html-->
+<div th:insert="base :: navigation"></div>
+<!---header--->
+<div class="jumbotron" >
+    <h1 class="display-4">How to Make a Website...</h1>
     <p class="lead">Explore HTML & CSS fundamentals as you build a website
         in this introductory web development course</p>
     <hr class="my-4">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" href="SignUp.html" role="button">SIGN UP</a>
+    <!--<img src="https://res.cloudinary.com/dgogsuupz/image/upload/c_scale,w_449/v1562699062/Indian-Education-Caste-System-Madras-Courier-02_fdlmhq.jpg">-->
 </div>
-</body>
-    <style>
-        body {
-            background-color: white;
-        }
-
-       </style>
-<!-- info about the website-->
-    <title >How to Code a Website </title>
-    <!--<header class ="header" style="background-color:#3c64c2;">-->
-    <!--<h1 align="center">Make a Website </h1>-->
-    <!--<h4 align="center"> Explore HTML & CSS fundamentals as you build a website-->
-        <!--in this introductory web development course</h4>-->
-  <!--<h2 align="center"> <button style="color: #ff863c" > <b>START  </b> </button> </h2>-->
-    <!--</header>-->
-<!-- overview of the website, waht it offers--->
+<!-- overview of the website, what it offers--->
     <h2> <a href="#test"> Overview </a> </h2>
     <h3> Why Learn HTML and CSS? </h3>
     <p> Everything you see on a website is a result of the combination of HTML and CSS.
@@ -85,7 +54,7 @@
             <box>
         <ul>
             <li>Site Structure - Interactive lesson</li>
-            <li> Common Cents Party - Freeform Project</li>
+            <li> Common Cents Party - Free-form Project</li>
             <li> Site Structure - Multiple Choice Quiz </li>
         </ul>
             </box>
