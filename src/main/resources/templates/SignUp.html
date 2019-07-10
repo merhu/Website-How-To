@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
+<!--<meta charset="UTF-8">-->
+<!--<title>Title</title>-->
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        body{
-            background-color: aliceblue;
-            align-content: center;
-            border-image: round;
-        }
-    </style>
+    <!--<div th:insert="base :: header"></div>-->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>Get Started for Free </title>
+<!--Bootstrap CSS-->
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous" />
+<!--My CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+    body {
+        background-color: aliceblue;
+        align-content: center;
+        font-family: 'Lora', serif;
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+    }
+</style>
+<!-- Header + img + font and colors---->
 </head>
-<body>
-<img align="center"
-     src="https://res.cloudinary.com/dgogsuupz/image/upload/c_scale,w_718/v1562699062/Indian-Education-Caste-System-Madras-Courier-02_fdlmhq.jpg" style="border-image: round">
+<div class="jumbotron" style="background-image: url(https://res.cloudinary.com/dgogsuupz/image/upload/v1562771853/fdf5933f83976b96e7b068e51635b0e66c0c1a8a_zvdevr.jpg); background-size: 100%;">
+    <div class="container">
+        <font color="white"><h1 class="display-4" >Get Started for free</h1></font>
+        <font color="#f5f5f5"><p class="lead"><b>Explore HTML & CSS fundamentals as you build a website
+        in this introductory web development course.</b></p> </font>
+        <hr class="my-3">
+    <!--<a class="btn btn-primary btn-lg" href="SignUp.html" role="button">GET STARTED</a>-->
+        <!--<img align="topright"-->
+         <!--src="https://res.cloudinary.com/dgogsuupz/image/upload/c_scale,w_449/v1562699062/Indian-Education-Caste-System-Madras-Courier-02_fdlmhq.jpg">-->
+    </div>
+</div>
 <!--- Sign up with email and password for free--->
-<form>
-    <h2 > Get Started for Free </h2>
+<body>
+<div class="footer">
+    <p>@LearnAcademy</p>
+    <p>Follow us on all of our Social Media @LearnAcademy</p>
+</div>
+<form >
+    <div class="container">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <br>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <br>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <div class="form-group form-check">
@@ -34,6 +67,7 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     <button type="reset" class="btn btn-primary">Clear</button>
+    </div>
 </form>
 </body>
 </html>

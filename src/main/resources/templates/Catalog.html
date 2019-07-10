@@ -2,13 +2,24 @@
 <html lang="en"xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <!---Header--->
     <title>Catalog</title>
+<style>
+    body{
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color: aquamarine;
+    }
+    body{
+        font-family: 'Bitter', serif;
+        background-color: aquamarine;
+    }
+</style>
 </head>
 <body>
 <!---Header--->
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid"  >
     <div class="container">
-        <h1 class="display-4">Full Catalog</h1>
+        <h1 class="display-3">Full Catalog</h1>
         <p class="lead">Whether you’re trying to level up your career, build your side project,
             or simply play around with programming, you’ve found the right place to start.
             Explore our programs and courses, try an exercise or two, and join our community of 45 million learners.</p>
@@ -16,11 +27,6 @@
         <p>Career Paths guide you through exactly what you need to learn to build a solid foundation for a career in tech.</p>
     </div>
 </div>
-<br>
-<h3> BY SUBJECT </h3>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<title>How to make a Website </title>
 <!--Bootstrap CSS-->
 <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -28,25 +34,34 @@
       crossorigin="anonymous" />
 <!--My CSS-->
 <link rel="stylesheet" type="text/css" href="css/style.css}">
+<!--google fonts--->
+<link href="https://fonts.googleapis.com/css?family=Bitter|Nanum+Gothic&display=swap" rel="stylesheet">
 <!--- Catalog and what are offered --->
-<div class="topnav">
-    <a href="#test"> Web Development </a><br>
-    <a href="#test"> Programming </a><br>
-    <a href="#test"> Data Science </a><br>
-    <a href="#test"> Partnership </a><br>
-    <a href="#test"> Design </a><br>
-    <a href="#test"> Game Development </a>
-    <h3> BY LANGUAGE </h3>
-    <a href="#test"> HTML & CSS </a> <br>
-    <a href="#test"> JavaScript </a> <br>
-    <a href="#test"> Java </a><br>
-    <a href="#test"> SQL </a><br>
-    <a href="#test"> Bash/Shell </a><br>
-    <a href="#test"> Ruby </a><br>
-    <a href="#test"> C++ </a><br>
-    <a href="#test"> R </a><br>
-    <a href="#test"> C# </a><br>
-    <a href="#test"> PHP </a><br>
+<div class="container">
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active">
+       <b>BY SUBJECT</b>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Web Development</a>
+    <a href="#" class="list-group-item list-group-item-action">Programming</a>
+    <a href="#" class="list-group-item list-group-item-action">Data Science</a>
+    <a href="#" class="list-group-item list-group-item-action ">Partnership</a>
+    <a href="#" class="list-group-item list-group-item-action">Design</a>
+    <a href="#" class="list-group-item list-group-item-action">Game Development</a>
+    <a href="#" class="list-group-item list-group-item-action active">
+        <b>BY LANGUAGE</b></a>
+    <a href="#" class="list-group-item list-group-item-action"> HTML & CSS</a>
+    <a href="#" class="list-group-item list-group-item-action">JavaScript</a>
+    <a href="#" class="list-group-item list-group-item-action">Java</a>
+    <a href="#" class="list-group-item list-group-item-action ">SQL</a>
+    <a href="#" class="list-group-item list-group-item-action">Bash/Shell</a>
+    <a href="#" class="list-group-item list-group-item-action">Ruby</a>
+    <a href="#" class="list-group-item list-group-item-action ">C++</a>
+    <a href="#" class="list-group-item list-group-item-action">R</a>
+    <a href="#" class="list-group-item list-group-item-action">C#</a>
+    <a href="#" class="list-group-item list-group-item-action">PHP</a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</div>
 </div>
 </body>
 </html>

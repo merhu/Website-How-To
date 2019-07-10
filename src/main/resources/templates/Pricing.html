@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
-    <div th:insert="base :: header"></div>
+    <!--<div th:insert="base :: header"></div>-->
     <link href="https://fonts.googleapis.com/css?family=Lora|Nanum+Gothic&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,11 +10,10 @@
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous" />
+    crossorigin="anonymous" />
     <!--My CSS-->
-    <link rel="stylesheet" type="text/css" th:href="css/style.css}">
+    <link rel="stylesheet" type="text/css" href="css/style.css}">
     <title>Pricing</title>
-
     <style>
         body {
             font-family: 'Lora', serif;
@@ -23,10 +22,23 @@
         h1,h4,h3,h2{
             align-content: center;
         }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-<div th:insert="base :: navigation"></div>
+<!--<div th:insert="base :: navigation"></div>-->
+<div class="footer">
+    <p>@LearnAcademy</p>
+    <p>Follow us on all of our Social Media @LearnAcademy</p>
+</div>
 <!---- header--->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -41,7 +53,7 @@
 <!-- Monthly subscriptions --->
 <div class="row">
     <div class="col-sm-4">
-        <div class="card">
+        <div color=""class="card">
             <div class="card-body">
                 <h5 class="card-title"><b> 12 Month Subscription</b></h5>
                 <h4 class="card-price"> $19.99/mo</h4>
@@ -73,18 +85,4 @@
 </div>
 </body>
 </html>
-<style>
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: red;
-        color: white;
-        text-align: center;
-    }
-</style>
 
-<!--<div class="footer">-->
-    <!--<p>Footer</p>-->
-<!--</div>-->

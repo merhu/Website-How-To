@@ -9,11 +9,15 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-.nav {
+.navigation {
     background-color: aliceblue;
 }
 .active {
 }
+.dropdown-item{
+
+}
+
 #firstItem{
 }
 #secondItem{

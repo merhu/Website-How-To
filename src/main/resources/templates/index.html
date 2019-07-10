@@ -2,10 +2,32 @@
 <html lang="en"xmlns:th="www.thymeleaf.org">
 <head>
     <div th:insert="base :: header"></div>
+<!--- header pictures--->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/dgogsuupz/image/upload/v1562784666/SOEMainPageHeader-5-2017_Gotham_eqhi0j.jpg" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src=" https://res.cloudinary.com/dgogsuupz/image/upload/v1562784669/Education-header_f63bys.jpg" class="d-block w-100"  alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/dgogsuupz/image/upload/v1562699065/academiaSlide01_fgd2d1.jpg" class="d-block w-100"  alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="https://res.cloudinary.com/dgogsuupz/image/upload/v1562784669/Education-header_f63bys.jpg" role="button" data-slide="up">
+            <span class="carousel-control-up-icon" aria-hidden="true"></span>
+            <span class="sr-only">up</span>
+        </a>
+        <a class="carousel-control-down" href="#carouselExampleControls" role="button" data-slide="down">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">down</span>
+        </a>
+    </div>
 </head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>How to make a Website </title>
+    <title>Learn How to make a Website </title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,17 +38,35 @@
     <!---Styling-->
     <style>
         body {
-            background-color: #ffd887;
+            background-color: moccasin;
+            font-family: 'Lora', serif;
+            /*background-image: url(https://res.cloudinary.com/dgogsuupz/image/upload/v156278507       6/vintage-retro-grungy-background-design-and-pattern-texture-picture-id656453072_twzcjc.jpg); background-size: 100%;*/
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+        }
+        font{
         }
     </style>
-
-
 <body>
+<!-- Footer-->
+<div class="footer">
+    <p>@LearnAcademy</p>
+    <p>Follow us on all of our Social Media @LearnAcademy</p>
+</div>
+
 <!-- Navigation bar from base.html-->
 <div th:insert="base :: navigation"></div>
 <!---header--->
-<div class="jumbotron" >
-    <h1 class="display-4">How to Make a Website...</h1>
+<div class="jumbotron" style="background-image: url(https://res.cloudinary.com/dgogsuupz/image/upload/v1562784669/Education-header_f63bys.jpg); background-size: 100%;">
+<!--<div class="jumbotron">-->
+<h1 class="display-4">How to Make a Website...</h1>
     <p class="lead">Explore HTML & CSS fundamentals as you build a website
         in this introductory web development course</p>
     <hr class="my-4">
@@ -63,5 +103,14 @@
         <li> Boundaries and Space </li>
         <li> Building with Bootstrap </li>
     </ul>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
